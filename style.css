@@ -1,0 +1,173 @@
+/* Style the header */
+header {
+  background-color: #f6f7e5;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header img {
+  height: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+	transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+ main {
+  padding: 20px;
+}
+
+.conteudo-principal p {
+  text-align: justify;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Seção de recomendações */
+.recomendacoes {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.recomendacoes h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #444;
+}
+
+.livros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.livro {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.livro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.livro img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+}
+
+.livro h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.livro p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.estrelas {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+/* Estilo dos Botões */
+button {
+  background-color: white;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #444;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 204, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(255, 204, 0, 0.3);
+}
+
+/* Estilo do footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f6f7e5;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  main p {
+    font-size: 1rem;
+  }
+}
